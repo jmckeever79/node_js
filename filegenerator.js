@@ -1,6 +1,10 @@
 var fs = require("fs");
 
-fs.appendFile("declare.txt", "This file was created using node.js.", function (err) {
+/*fs.appendFile("declare.txt", "You know what we did.\n", function (err) {
     if (err) throw err;
     console.log("saved!");
+});*/
+
+fs.rename("location.html", "locations.html", function() {
+    console.log("success");
 });
